@@ -12,7 +12,7 @@ binding = "ASSETS"
 # y pega aquí el "id" que te devuelve.
 [[kv_namespaces]]
 binding = "BOTE_KV"
-id = "PEGA_AQUI_EL_ID_DEL_NAMESPACE"
+id = "d15b48de504c4437825b5e122e21e202"
 
 [vars]
 TZ_NAME = "Europe/Madrid"
