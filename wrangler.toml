@@ -1,0 +1,18 @@
+name = "gzn"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+
+# Frontend: sirve la carpeta /public desde el mismo Worker (mismo dominio que la API, sin CORS).
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+# Base de datos. Crea el namespace con:
+#   npx wrangler kv namespace create GZN_KV
+# y pega aquí el "id" que te devuelve.
+[[kv_namespaces]]
+binding = "GZN_KV"
+id = "PEGA_AQUI_EL_ID_DEL_NAMESPACE"
+
+[vars]
+TZ_NAME = "Europe/Madrid"
